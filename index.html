@@ -104,7 +104,7 @@
                     <!-- Badge -->
                     <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 text-sm">
                         <span class="w-2 h-2 bg-green-400 rounded-full pulse-animation"></span>
-                        <span>500+ agencies already onboard</span>
+                        <span style="color: white;">500+ agencies already onboard</span>
                     </div>
                     
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight" style="color: white;">
@@ -339,30 +339,41 @@
     
     <!-- Stats Section -->
     <section class="py-16 bg-white relative overflow-hidden">
-        <!-- Background decoration -->
-        <div class="absolute inset-0 bg-gradient-to-r from-purple-50 via-white to-blue-50"></div>
+        <!-- Textured background with subtle pattern -->
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-50 via-white to-blue-50 opacity-70"
+             style="background-image: url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM36 6V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">Trusted by Agencies Worldwide</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Join thousands of creative professionals who have transformed their workflow</p>
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Trusted by Agencies Worldwide</h2>
+                <p class="text-xl !text-black text-gray-600 max-w-2xl mx-auto drop-shadow-md">Join thousands of creative professionals who have transformed their workflow</p>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="space-y-2">
-                    <div class="text-4xl font-bold gradient-text">500+</div>
-                    <div class="text-gray-600">Active Agencies</div>
+                <!-- Stats cards with enhanced shadows and hover effects -->
+                <div class="space-y-2 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] 
+                            hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="text-4xl font-bold gradient-text drop-shadow">500+</div>
+                    <div class="text-gray-600 !text-black">Active Agencies</div>
                 </div>
-                <div class="space-y-2">
-                    <div class="text-4xl font-bold gradient-text">₹50Cr+</div>
-                    <div class="text-gray-600">Revenue Processed</div>
+                
+                <div class="space-y-2 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] 
+                            hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="text-4xl font-bold gradient-text drop-shadow">₹50Cr+</div>
+                    <div class="text-gray-600 !text-black">Revenue Processed</div>
                 </div>
-                <div class="space-y-2">
-                    <div class="text-4xl font-bold gradient-text">10k+</div>
-                    <div class="text-gray-600">Projects Completed</div>
+                
+                <div class="space-y-2 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] 
+                            hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="text-4xl font-bold gradient-text drop-shadow">10k+</div>
+                    <div class="text-gray-600 !text-black">Projects Completed</div>
                 </div>
-                <div class="space-y-2">
-                    <div class="text-4xl font-bold gradient-text">99.9%</div>
-                    <div class="text-gray-600">Uptime</div>
+                
+                <div class="space-y-2 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] 
+                            hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="text-4xl font-bold gradient-text drop-shadow">99.9%</div>
+                    <div class="text-gray-600 !text-black">Uptime</div>
                 </div>
             </div>
             
@@ -798,7 +809,6 @@
                                         <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
                                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
-                                            </svg>
                                         </div>
                                         <div>
                                             <p class="font-semibold text-gray-900">Acme Corp - Brand Identity</p>
