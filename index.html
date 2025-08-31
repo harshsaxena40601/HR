@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H|R Studio - The Complete Agency Operating System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class='dark-theme'>
+    <!-- Announcement Bar -->
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-white text-xl font-bold">H|R Studio</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="#product" class="text-white hover:text-white/80 transition-colors duration-200 font-medium flex items-center">
+                            Product
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-t-lg">
+                                <div class="font-semibold">Project Management</div>
+                                <div class="text-sm text-gray-500">Kanban boards, timelines & more</div>
+                            </a>
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">
+                                <div class="font-semibold">Client Portal</div>
+                                <div class="text-sm text-gray-500">White-label client experience</div>
+                            </a>
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">
+                                <div class="font-semibold">Payments & Invoicing</div>
+                                <div class="text-sm text-gray-500">Get paid faster</div>
+                            </a>
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-b-lg">
+                                <div class="font-semibold">AI Tools</div>
+                                <div class="text-sm text-gray-500">Automate your workflow</div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#pricing" class="text-white hover:text-white/80 transition-colors duration-200 font-medium">Pricing</a>
+                    <a href="#resources" class="text-white hover:text-white/80 transition-colors duration-200 font-medium">Resources</a>
+                    <a href="#" class="text-white hover:text-white/80 transition-colors duration-200 font-medium">Login</a>
+                    <button class="bg-white hover:bg-gray-100 text-purple-600 px-5 py-2 rounded-lg font-semibold transition-all duration-200">
+                        Start Free Trial
+                    </button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2 focus:outline-none" aria-label="Toggle mobile menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#product" class="block">
+                    Products
+                </a>
+                <a href="#pricing" class="block">
+                    Pricing
+                </a>
+                <a href="#resources" class="block">
+                    Resources
+                </a>
+                <button class="w-full bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center relative pt-24">
+        <!-- Animated background particles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-96 h-96 bg-purple-300 rounded-full blur-3xl opacity-20 -top-48 -left-48 float-animation"></div>
+            <div class="absolute w-96 h-96 bg-pink-300 rounded-full blur-3xl opacity-20 -bottom-48 -right-48 float-animation" style="animation-delay: 3s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-white space-y-6">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 text-sm">
+                        <span class="w-2 h-2 bg-green-400 rounded-full pulse-animation"></span>
+                        <span>500+ agencies already onboard</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight" style="color: white;">
+                        The Complete <span class="gradient-text-alt">Agency Operating System</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-white/90 leading-relaxed">
+                        From client onboarding to final payment - manage your entire creative workflow in one powerful platform. Built by agency owners, for agency owners.
+                    </p>
+                    
+                    <!-- Features list -->
+                    <div class="grid grid-cols-2 gap-4 py-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Project Management</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Client Portals</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Automated Billing</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">AI Assistance</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button class="group bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-2xl transition-all duration-200 hover-lift relative overflow-hidden">
+                            <span class="relative z-10">Start 14-Day Free Trial</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        </button>
+                        <button class="group border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all duration-200 flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                            </svg>
+                            Watch 2-min Demo
+                        </button>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="pt-8">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="flex -space-x-2">
+                                <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://i.pravatar.cc/40?img=2" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://i.pravatar.cc/40?img=3" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://i.pravatar.cc/40?img=4" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                            </div>
+                            <div>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="text-white/90 text-sm">4.9/5 from 500+ agencies</span>
+                            </div>
+                        </div>
+                        <p class="text-white/70 text-sm italic">"H|R Studio saved us 20+ hours per week" - Sarah, Creative Director</p>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Enhanced Dashboard Mockup -->
+                <div class="relative">
+                    <!-- Floating metrics - repositioned -->
+                    <div class="absolute -top-6 right-6 z-10 transform hover:-translate-y-1 transition-transform duration-200">
+                        <div class="metric-card rounded-xl p-4 bg-gradient-to-br from-green-500/10 to-green-500/20 backdrop-blur-md border border-white/10">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-chart-line text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-white/70">Revenue</p>
+                                    <p class="text-lg font-bold text-white">+45%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -bottom-6 left-6 z-10 transform hover:-translate-y-1 transition-transform duration-200">
+                        <div class="metric-card rounded-xl p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/20 backdrop-blur-md border border-white/10">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-users text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-white/70">Active Clients</p>
+                                    <p class="text-lg font-bold text-white">127</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Dashboard -->
+                    <div class="dashboard-mockup h-[500px] relative">
+                        <!-- Dashboard Header with Updated Metrics -->
+                        <div class="flex justify-between items-center p-6 border-b border-white/10">
+                            <div class="flex space-x-6">
+                                <!-- Active Members Metric -->
+                                <div class="metric-card rounded-lg p-4 text-white">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-user-group"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs opacity-70">Active Members</p>
+                                            <p class="text-lg font-bold">24</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pending Projects Metric -->
+                                <div class="metric-card rounded-lg p-4 text-white">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs opacity-70">Pending Projects</p>
+                                            <p class="text-lg font-bold">7</p>
+                                            <span class="text-xs text-orange-300">Requires attention</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- User Profile -->
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-white/10 rounded-lg px-3 py-1 text-xs text-white">
+                                    <i class="fas fa-bell mr-1"></i> 3 new
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <!-- Dashboard Content -->
+                        <div class="p-6">
+                            <!-- Stats Row -->
+                            <div class="grid grid-cols-3 gap-4 mb-6">
+                                <div class="bg-white/10 rounded-lg p-4">
+                                    <div class="text-white/60 text-xs mb-1">In Progress</div>
+                                    <div class="text-white text-xl font-bold">12</div>
+                                    <div class="text-blue-400 text-xs">On track</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4">
+                                    <div class="text-white/60 text-xs mb-1">Pending Review</div>
+                                    <div class="text-white text-xl font-bold">5</div>
+                                    <div class="text-orange-400 text-xs">2 urgent</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4">
+                                    <div class="text-white/60 text-xs mb-1">Completed</div>
+                                    <div class="text-white text-xl font-bold">18</div>
+                                    <div class="text-green-400 text-xs">This month</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pending Projects List -->
+                            <div class="bg-white/10 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="text-white font-semibold">Pending Projects</h4>
+                                    <span class="text-white/60 text-xs">View all →</span>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="bg-white/5 rounded-lg p-3 flex items-center justify-between">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white text-xs font-bold">SP</div>
+                                            <div>
+                                                <p class="text-white text-sm font-medium">Social Media Campaign</p>
+                                                <p class="text-white/60 text-xs">Waiting for content approval</p>
+                                            </div>
+                                        </div>
+                                        <span class="text-orange-300 text-xs">Due tomorrow</span>
+                                    </div>
+
+                                    <div class="bg-white/5 rounded-lg p-3 flex items-center justify-between">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-purple-500 rounded flex items-center justify-center text-white text-xs font-bold">WD</div>
+                                            <div>
+                                                <p class="text-white text-sm font-medium">Website Redesign</p>
+                                                <p class="text-white/60 text-xs">Client feedback pending</p>
+                                            </div>
+                                        </div>
+                                        <span class="text-orange-300 text-xs">Due in 3 days</span>
+                                    </div>
+
+                                    <div class="bg-white/5 rounded-lg p-3 flex items-center justify-between">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-blue-500 rounded flex items-center justify-center text-white text-xs font-bold">LP</div>
+                                            <div>
+                                                <p class="text-white text-sm font-medium">Logo Package</p>
+                                                <p class="text-white/60 text-xs">Awaiting resource allocation</p>
+                                            </div>
+                                        </div>
+                                        <span class="text-orange-300 text-xs">Due next week</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating notification -->
+            <div class="absolute top-20 right-4 bg-white rounded-lg p-3 shadow-lg slide-in" style="animation-delay: 0.6s;">
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full pulse-animation"></div>
+                    <span class="text-sm text-gray-700">Client approved design!</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bounce-animation">
+            <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-16 bg-white relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-50 via-white to-blue-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">Trusted by Agencies Worldwide</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Join thousands of creative professionals who have transformed their workflow</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold gradient-text">500+</div>
+                    <div class="text-gray-600">Active Agencies</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold gradient-text">₹50Cr+</div>
+                    <div class="text-gray-600">Revenue Processed</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold gradient-text">10k+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold gradient-text">99.9%</div>
+                    <div class="text-gray-600">Uptime</div>
+                </div>
+            </div>
+            
+            <!-- Company logos -->
+            <div class="mt-16 pt-8 border-t border-gray-200">
+    <p class="text-center text-gray-500 mb-8">Trusted by leading agencies worldwide</p>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center opacity-80">
+        <!-- Google -->
+        <img src="https://www.vectorlogo.zone/logos/google/google-ar21.svg" alt="Google" class="h-12 grayscale hover:grayscale-0 transition-all duration-200">
+        
+        <!-- Microsoft -->
+        <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-ar21.svg" alt="Microsoft" class="h-12 grayscale hover:grayscale-0 transition-all duration-200">
+        
+        <!-- Adobe -->
+        <img src="https://www.vectorlogo.zone/logos/adobe/adobe-ar21.svg" alt="Adobe" class="h-12 grayscale hover:grayscale-0 transition-all duration-200">
+        
+        <!-- Slack -->
+        <img src="https://www.vectorlogo.zone/logos/slack/slack-ar21.svg" alt="Slack" class="h-12 grayscale hover:grayscale-0 transition-all duration-200">
+        
+        <!-- Shopify -->
+        <img src="https://www.vectorlogo.zone/logos/shopify/shopify-ar21.svg" alt="Shopify" class="h-12 grayscale hover:grayscale-0 transition-all duration-200">
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Features Preview Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">Everything You Need in One Place</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Streamline your entire creative workflow with powerful tools designed for modern agencies</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center group cursor-pointer feature-card bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2 text-lg">Project Management</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Kanban boards, timelines, and automated progress tracking to keep every project on schedule</p>
+                </div>
+                
+                <div class="text-center group cursor-pointer feature-card bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2 text-lg">Client Portal</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">White-label client portals with real-time project visibility and seamless feedback collection</p>
+                </div>
+                
+                <div class="text-center group cursor-pointer feature-card bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2 text-lg">Smart Payments</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Automated invoicing, milestone payments, and integrated payment processing for faster payouts</p>
+                </div>
+                
+                <div class="text-center group cursor-pointer feature-card bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-700 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2 text-lg">AI Assistance</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Intelligent automation for proposals, client communication, and workflow optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Section -->
+    <section id="product" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">Powerful Features for Modern Agencies</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From project kickoff to final payment, H|R Studio handles every aspect of your creative workflow with precision and style</p>
+            </div>
+            
+            <div class="space-y-24">
+                <!-- Feature 1: Project Management -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center space-x-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.532 1.532 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                        </svg>
+                            <span>Project Management</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Project Management That Actually Works</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">Track every project from brief to delivery with intuitive kanban boards, timeline views, and automated progress updates that keep your team and clients perfectly aligned.</p>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start">
+            <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <div>
+                <span class="font-medium text-gray-900">Visual Project Tracking</span>
+                <p class="text-sm">Intuitive kanban boards and Gantt charts for clear project visualization</p>
+            </div>
+        </li>
+        <li class="flex items-start">
+            <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <div>
+                <span class="font-medium text-gray-900">Task Management</span>
+                <p class="text-sm">Break down projects into manageable tasks with automated assignments</p>
+            </div>
+        </li>
+        <li class="flex items-start">
+            <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <div>
+                <span class="font-medium text-gray-900">Progress Tracking</span>
+                <p class="text-sm">Real-time updates and milestone tracking for better project visibility</p>
+            </div>
+        </li>
+    </ul>
+                            <div class="pt-4">
+                            <button class="gradient-btn bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+                                Explore Project Tools
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="tilt-card bg-white rounded-2xl shadow-2xl p-6 hover-lift">
+                            <div class="space-y-4">
+                                <!-- Project header -->
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center">
+                                            <span class="text-white font-bold text-lg">AC</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-gray-900 text-lg">Acme Corp Rebrand</h4>
+                                            <p class="text-gray-500 text-sm">Brand Identity • Due in 3 days</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">In Progress</span>
+                                </div>
+                                
+                                <!-- Progress overview -->
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-gray-700">Overall Progress</span>
+                                        <span class="text-sm font-bold text-purple-600">75%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-3">
+                                        <div class="bg-gradient-to-r from-purple-500 to-purple-700 h-3 rounded-full relative overflow-hidden" style="width: 75%">
+                                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-pulse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Task list -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center p-3 bg-green-50 border border-green-200 rounded-lg">
+                                        <div class="w-5 h-5 bg-green-500 rounded-full mr-3 flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium text-gray-900">Logo concepts</p>
+                                            <p class="text-xs text-gray-500">Completed by Sarah</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                                        <div class="w-5 h-5 bg-blue-500 rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-white rounded-full pulse-animation"></div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium text-gray-900">Brand guidelines</p>
+                                            <p class="text-xs text-gray-500">In review • Mike Chen</p>
+                                        </div>
+                                        <span class="text-xs text-blue-600 font-medium">2 days left</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center p-3 bg-gray-50 border border-gray-200 rounded-lg">
+                                        <div class="w-5 h-5 bg-gray-300 rounded-full mr-3"></div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium text-gray-700">Final deliverables</p>
+                                            <p class="text-xs text-gray-500">Pending • Not assigned</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Team avatars -->
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-xs text-gray-500">Team:</span>
+                                        <div class="flex -space-x-2">
+                                            <img src="https://i.pravatar.cc/32?img=1" class="w-8 h-8 rounded-full border-2 border-white" alt="Team member">
+                                            <img src="https://i.pravatar.cc/32?img=2" class="w-8 h-8 rounded-full border-2 border-white" alt="Team member">
+                                            <img src="https://i.pravatar.cc/32?img=3" class="w-8 h-8 rounded-full border-2 border-white" alt="Team member">
+                                        </div>
+                                    </div>
+                                    <div class="text-xs text-gray-500">Last updated: 2 hours ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating elements -->
+                        <div class="absolute -top-4 -right-4 bg-green-500 text-white p-3 rounded-lg shadow-lg slide-in">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm font-medium">Task completed!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Client Portal -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <div class="tilt-card bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-enhanced p-6">
+                            <!-- Portal header -->
+                            <div class="text-center mb-6">
+                                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
+                                    <span class="text-white font-bold text-2xl">AC</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900">Acme Corp Portal</h4>
+                                <p class="text-gray-600">Your personalized project dashboard</p>
+                            </div>
+                            
+                            <!-- Quick stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-6">
+                                <div class="text-center p-3 bg-white rounded-lg shadow-sm">
+                                    <div class="text-2xl font-bold text-blue-600">3</div>
+                                    <div class="text-xs text-gray-500">Active</div>
+                                </div>
+                                <div class="text-center p-3 bg-white rounded-lg shadow-sm">
+                                    <div class="text-2xl font-bold text-orange-600">2</div>
+                                    <div class="text-xs text-gray-500">Review</div>
+                                </div>
+                                <div class="text-center p-3 bg-white rounded-lg shadow-sm">
+                                    <div class="text-2xl font-bold text-green-600">12</div>
+                                    <div class="text-xs text-gray-500">Done</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Recent activity -->
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <h5 class="font-semibold text-gray-900 mb-3">Recent Updates</h5>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <div>
+                                            <p class="text-sm text-gray-900">Logo concepts approved</p>
+                                            <p class="text-xs text-gray-500">2 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <div>
+                                            <p class="text-sm text-gray-900">Brand guidelines ready for review</p>
+                                            <p class="text-xs text-gray-500">5 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <div>
+                                            <p class="text-sm text-gray-900">New message from design team</p>
+                                            <p class="text-xs text-gray-500">1 day ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Action buttons -->
+                            <div class="flex space-x-3 mt-4">
+                                <button class="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                                    View Files
+                                </button>
+                                <button class="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating feedback notification -->
+                        <div class="absolute -bottom-4 -left-4 bg-orange-500 text-white p-3 rounded-lg shadow-lg slide-in" style="animation-delay: 0.8s;">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm font-medium">New feedback received</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 space-y-6">
+                        <div class="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Client Experience</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">White-Label Client Portals That Impress</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">Give every client a professional, branded experience where they can track projects, leave feedback, and make payments - all seamlessly integrated under your agency's identity.</p>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Custom Branding & Domain</span>
+                                    <p class="text-sm">Your logo, colors, and custom domain for a seamless brand experience</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Real-time Project Visibility</span>
+                                    <p class="text-sm">Clients see exactly what's happening without overwhelming them with details</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Smart Feedback System</span>
+                                    <p class="text-sm">Contextual feedback tools with timestamps and visual annotations</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pt-4">
+                            <button class="gradient-btn bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+                                See Client Portal Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Smart Payments -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center space-x-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"></path>
+                            </svg>
+                            <span>Payment Processing</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Get Paid Faster, Every Single Time</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">Eliminate payment delays with automated invoicing, milestone-based payments, and integrated processing that makes it effortless for clients to pay you on time.</p>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Automated Invoice Generation</span>
+                                    <p class="text-sm">Smart invoicing based on project milestones and deliverable approvals</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Multiple Payment Methods</span>
+                                    <p class="text-sm">UPI, cards, bank transfers, and international payments - all in one place</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Payment Tracking & Reminders</span>
+                                    <p class="text-sm">Automatic follow-ups and payment status updates for better cash flow</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pt-4">
+                            <button class="gradient-btn bg-gradient-to-r from-green-600 to-green-800 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+                                Learn About Payments
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="tilt-card bg-white rounded-2xl shadow-enhanced p-6">
+                            <div class="mb-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="text-xl font-bold text-gray-900">Payment Dashboard</h4>
+                                    <span class="text-sm text-gray-500">Current Month</span>
+                                </div>
+                                <div class="text-4xl font-bold text-green-600 mb-2">₹4,25,000</div>
+                                <div class="flex items-center text-sm">
+                                    <svg class="w-4 h-4 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-green-600 font-medium">+24% from last month</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Payment status cards -->
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">TechCorp - Video Campaign</p>
+                                            <p class="text-sm text-gray-600">Paid 2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-lg font-bold text-green-600">₹1,50,000</div>
+                                        <div class="text-xs text-green-600 font-medium">PAID</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Acme Corp - Brand Identity</p>
+                                            <p class="text-sm text-gray-600">Due in 1 day</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-lg font-bold text-orange-600">₹85,000</div>
+                                        <div class="text-xs text-orange-600 font-medium">PENDING</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">StartupX - Digital Strategy</p>
+                                            <p class="text-sm text-gray-600">Invoice sent</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-lg font-bold text-blue-600">₹1,90,000</div>
+                                        <div class="text-xs text-blue-600 font-medium">INVOICED</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quick actions -->
+                            <div class="flex space-x-3 mt-6 pt-4 border-t border-gray-100">
+                                <button class="flex-1 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                                    Send Invoice
+                                </button>
+                                <button class="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                                    View Reports
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating payment notification -->
+                        <div class="absolute -top-4 -left-4 bg-green-500 text-white p-3 rounded-lg shadow-lg slide-in" style="animation-delay: 1s;">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"></path>
+                                </svg>
+                                <span class="text-sm font-medium">Payment received!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: AI Assistance -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <div class="tilt-card bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 rounded-2xl shadow-enhanced p-6">
+                            <!-- AI Chat Interface -->
+                            <div class="bg-white rounded-lg p-4 mb-4 shadow-sm">
+                                <div class="flex items-center space-x-2 mb-4">
+                                    <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">AI Assistant</span>
+                                    <div class="w-2 h-2 bg-green-500 rounded-full pulse-animation"></div>
+                                </div>
+                                
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex">
+                                        <div class="bg-gray-100 rounded-lg px-3 py-2 max-w-xs">
+                                            <p class="text-gray-700">Create a proposal for a new client's website project</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-end">
+                                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg px-3 py-2 max-w-xs">
+                                            <p>I've created a comprehensive website proposal including timeline, deliverables, and pricing based on your previous projects. Would you like me to customize it further?</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex">
+                                        <div class="bg-gray-100 rounded-lg px-3 py-2 max-w-xs">
+                                            <p class="text-gray-700">Yes, add SEO services and make it more formal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Typing indicator -->
+                                <div class="flex justify-end mt-3">
+                                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg px-3 py-2">
+                                        <div class="flex space-x-1">
+                                            <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                                            <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                                            <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- AI Suggestions -->
+                            <div class="space-y-3">
+                                <h5 class="font-semibold text-gray-900 text-sm">Quick Actions</h5>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <button class="bg-white p-3 rounded-lg shadow-sm text-left hover:shadow-md transition-shadow">
+                                        <div class="text-xs font-medium text-purple-600 mb-1">Generate</div>
+                                        <div class="text-xs text-gray-700">Client Email</div>
+                                    </button>
+                                    <button class="bg-white p-3 rounded-lg shadow-sm text-left hover:shadow-md transition-shadow">
+                                        <div class="text-xs font-medium text-purple-600 mb-1">Create</div>
+                                        <div class="text-xs text-gray-700">Project Brief</div>
+                                    </button>
+                                    <button class="bg-white p-3 rounded-lg shadow-sm text-left hover:shadow-md transition-shadow">
+                                        <div class="text-xs font-medium text-purple-600 mb-1">Draft</div>
+                                        <div class="text-xs text-gray-700">Invoice</div>
+                                    </button>
+                                    <button class="bg-white p-3 rounded-lg shadow-sm text-left hover:shadow-md transition-shadow">
+                                        <div class="text-xs font-medium text-purple-600 mb-1">Write</div>
+                                        <div class="text-xs text-gray-700">Proposal</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating AI notification -->
+                        <div class="absolute -bottom-4 -right-4 bg-purple-500 text-white p-3 rounded-lg shadow-lg slide-in" style="animation-delay: 1.2s;">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.532 1.532 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                        </svg>
+                                <span class="text-sm font-medium">Proposal ready!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 space-y-6">
+                        <div class="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.532 1.532 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                        </svg>
+                            <span>AI-Powered</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Your Intelligent Agency Assistant</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">Let AI handle the repetitive tasks while you focus on creativity. From content generation to project planning, our AI assistant makes your agency more efficient.</p>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Smart Content Creation</span>
+                                    <p class="text-sm">Generate proposals, emails, and marketing copy with AI that learns your brand voice</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Automated Workflows</span>
+                                    <p class="text-sm">Set up intelligent automations for project management, client updates, and team coordination</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-gray-900">Predictive Analytics</span>
+                                    <p class="text-sm">Get AI-powered insights on project timelines, resource allocation, and business forecasting</p>
+                                </div>
+                            </li>
+             </ul>                            <button class="gradient-btn bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+                                Try AI Assistant Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the plan that fits your agency's needs. No hidden fees, no surprises.</p>
+            </div>
+            
+            <!-- Pricing Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Free Trial Card -->
+                <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 shadow-lg text-white text-center">
+                    <div class="mb-4">
+                        <span class="text-4xl font-extrabold">14<span class="text-2xl font-medium">/mo</span></span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2"style="color: white;">Free Trial</h3>
+                    <p class="text-sm mb-4">Experience all features with no limitations. Cancel anytime.</p>
+                    <button class="bg-white text-purple-600 px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:bg-gray-100">
+                        Start Free Trial
+                    </button>
+                </div>
+                
+                <!-- Basic Plan Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="mb-4">
+                        <span class="text-4xl font-extrabold" style="color: rgb(15, 15, 15);">15<span class="text-2xl font-medium">/mo</span></span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Basic Plan</h3>
+                    <p class="text-sm mb-4">Ideal for freelancers and small teams. All essential features included.</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:bg-purple-700">
+                        Get Started
+                    </button>
+                </div>
+                
+                <!-- Pro Plan Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="mb-4">
+                        <span class="text-4xl font-extrabold" style="color: rgb(0, 0, 0);">29<span class="text-2xl font-medium">/mo</span></span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2" style="color: rgb(0, 0, 0);">Pro Plan</h3>
+                    <p class="text-sm mb-4">Advanced features for growing agencies. Priority support included.</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:bg-purple-700">
+                        Upgrade to Pro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. See how we've transformed other agencies.</p>
+            </div>
+            
+            <!-- Testimonial Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">John Doe</h4>
+                            <p class="text-sm text-gray-500">Creative Director, ABC Agency</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"H|R Studio has completely transformed the way we manage projects and communicate with clients. The AI tools are a game changer!"</p>
+                    <div class="flex space-x-2">
+                        <span class="text-xs bg-green-100 text-green-800 rounded-full px-3 py-1">Project Management</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 rounded-full px-3 py-1">Client Portal</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Jane Smith</h4>
+                            <p class="text-sm text-gray-500">CEO, XYZ Agency</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The level of organization and efficiency we've achieved since using H|R Studio is incredible. Our clients love the new portal!"</p>
+                    <div class="flex space-x-2">
+                        <span class="text-xs bg-green-100 text-green-800 rounded-full px-3 py-1">Automated Billing</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 rounded-full px-3 py-1">AI Assistance</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Emily Johnson</h4>
+                            <p class="text-sm text-gray-500">Founder, Creative Co.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"As a small agency, we struggled with managing multiple clients and projects. H|R Studio has streamlined our entire process."</p>
+                    <div class="flex space-x-2">
+                        <span class="text-xs bg-green-100 text-green-800 rounded-full px-3 py-1">Client Portal</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 rounded-full px-3 py-1">Smart Payments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold gradient-text mb-4">Resources to Fuel Your Growth</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Access exclusive content, tools, and templates to help your agency thrive.</p>
+            </div>
+            
+            <!-- Resource Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 shadow-lg text-white text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-book-open fa-3x opacity-80"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"style="color: white;">E-book: The Future of Agency Work</h3>
+                    <p class="text-sm mb-4">Discover the trends and tools that will shape the future of creative agencies.</p>
+                    <a href="#" class="inline-block bg-white text-purple-600 px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:bg-gray-100">
+                        Download Now
+                    </a>
+                </div>
+                
+                <!-- Resource 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-video fa-3x text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="color: rgb(4, 4, 4);">Webinar: Mastering Client Communication</h3>
+                    <p class="text-sm mb-4" style="color: rgb(13, 13, 13);">Join our experts as they share strategies for effective client communication and relationship building.</p>
+                    <a href="#" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:bg-purple-700">
+                        Register Now
+                    </a>
+                </div>
+                
+                <!-- Resource 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-tools fa-3x text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Template Pack: Proposals & Invoices</h3>
+                    <p class="text-sm mb-4">Get our customizable templates for proposals, invoices, and contracts to streamline your workflow.</p>
+                    <a href="#" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:bg-purple-700">
+                        Get Templates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                Ready to Transform Your Agency?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join thousands of creators and agencies who have streamlined their workflow with H|R Studio. 
+                Start your free trial today - no credit card required.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-200 hover-lift shadow-xl">
+                    Start Free Trial
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all duration-200">
+                    Schedule Demo
+                </button>
+            </div>
+            
+            <div class="mt-8 flex items-center justify-center space-x-8 text-white/70 text-sm">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    14-day free trial
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    No credit card required
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Cancel anytime
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-white">H|R Studio</span>
+                    </div>
+                    <p class="text-gray-300">
+                        The all-in-one platform for creative agencies and freelancers to manage projects, 
+                        clients, and payments seamlessly.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Features</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Pricing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Integrations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">API</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Security</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Press</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Partners</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Help Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Documentation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Community</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-300">
+                        © 2025 H|R Studio. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Register Modal Placeholder -->
+    <div id="auth-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Welcome to H|R Studio</h3>
+                <p class="text-gray-600">Sign in to your account or create a new one</p>
+            </div>
+            
+            <!-- Auth Toggle -->
+            <div class="flex bg-gray-100 rounded-lg p-1 mb-6">
+                <button id="login-tab" class="flex-1 py-2 px-4 text-sm font-medium rounded-md bg-white text-purple-600 shadow-sm">
+                    Login
+                </button>
+                <button id="register-tab" class="flex-1 py-2 px-4 text-sm font-medium rounded-md text-gray-500 hover:text-gray-700">
+                    Register
+                </button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input type="password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter your password">
+                </div>
+                <div class="flex items-center justify-between">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                        <span class="ml-2 text-sm text-gray-600">Remember me</span>
+                    </label>
+                    <a href="#" class="text-sm text-purple-600 hover:text-purple-500">Forgot password?</a>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white py-2 px-4 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-900 transition-all duration-200">
+                    Sign In
+                </button>
+            </form>
+            
+            <!-- Register Form -->
+            <form id="register-form" class="space-y-4 hidden">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input type="password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Create a password">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+                    <input type="password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Confirm your password">
+                </div>
+                <label class="flex items-center">
+                    <input type="checkbox" class="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                    <span class="ml-2 text-sm text-gray-600">I agree to the <a href="#" class="text-purple-600 hover:text-purple-500">Terms of Service</a></span>
+                </label>
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white py-2 px-4 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-900 transition-all duration-200">
+                    Create Account
+                </button>
+            </form>
+            
+            <!-- Close Button -->
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Add these styles to your CSS -->
+<!-- ... other head elements ... -->
+    <script src="/script.js"></script>
+</body>
+</html>
